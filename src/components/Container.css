@@ -1,0 +1,75 @@
+.container{
+    margin: 0 0 50px;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -60px;
+    background: #fff;
+    padding: 40px 0 20px;
+    box-shadow: 0 -10px 16px rgb(0 0 0 / 9%);
+    width: 1140px;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.wrapper>div.field:not(:last-child) {
+    border-right: 1px solid #bcbcb7;
+}
+
+.wrapper > div {
+    width: calc(33.3% - 50px);
+    position: relative;
+    padding: 0 40px 30px 0;
+    margin-left: 9px;
+}
+.content{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #212322;
+    margin: 0 0 10px;
+}
+
+.heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: black;
+    margin: 0 0 10px;
+}
+.para p {
+    margin: 0;
+    color: black;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.icon{
+    font-size: 14px;
+    line-height: 16px;
+    color: #090;
+    margin: 0;
+    padding: 7px 21px 7px 0;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media all and (max-width:700px) {
+    .wrapper{
+        flex-direction: column;
+        width: 370px;
+        margin-top: -160px;
+    }
+    .wrapper div{
+        width: 322px;
+    }
+}
